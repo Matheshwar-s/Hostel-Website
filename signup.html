@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Hostel-signup
+        </title>
+        <link rel="stylesheet" href="signup.css">
+    </head>
+    <body>
+        <div  id="top">
+            <div>
+                <nav><a href="page.html">&#8592;Back</a></nav>
+            </div>
+        </div>
+        <div id="form"><br>
+            <form class="signup">
+                <img class="formimg" alt="dp" src="dp.img" /><br><br><br>
+                <label for="Username" class="label"> USERNAME:</label>
+                <input class="input" type="text" name="Username" placeholder="Username" required/>
+                <br><br>
+                <label for="email" class="label">E-MAIL:</label>
+                <input class="inpute" type="email" name="email" placeholder="E-mail" required style="margin-left: 30px;"/><br><br>
+                <label for="select-hostel"> Select Hostel:</label>
+                <select name="select-hostel" >
+                    <option value="BH-1">BH-1</option>
+                    <option value="BH-1">GH-1</option>
+                    <option value="BH-1">BH-2</option>
+                    <option value="BH-1">GH-2</option>
+                </select><br><br>
+                <label for="room-no"> Enter room-no:</label>
+                <input type="number" name="room-no" value="room-no" required/>
+                <br><br>
+                <label for="DOB">Date Of Birth:</label>
+                <input type="date" value="DOB" name="DOB" required/><br><br>
+                <label for="year"> Graduate:</label>
+                <input type="radio" name="Graduate" value="Graduate" required/><label>UG</label>
+                <input type="radio" name="Graduate" value="Graduate"/><label>PG</label>
+                <br><br>
+                <label for="year">Year of studying:</label>
+                <input type="range" class="slider" value="1" min="1" max="4" step="1" name="year" required oninput="this.nextElementSibling.value=this.value"/>
+                <output style="color: blanchedalmond;">1</output><br><br>
+                <label for="degree"> Degree:</label>
+                <input type="radio" name="degree" value="B.E" required/><label>B.E</label>
+                <input type="radio" name="degree" value="B.Tech"/><label>B.Tech</label>  
+                <input type="radio" name="degree" value="M.E"/><label>M.E </label> 
+                <input type="radio" name="degree" value="M.Tech"/><label>M.Tech</label>  <br><br>
+                <label for="department">Enter Department Name:</label>
+                <input type="text" name="department" placeholder="department" required/>
+                <br><br>
+                <button class="button">Sign In</button>
+                
+
+
+
+            </form>
+        </div>
+        <br>
+        <div class="footer">
+            <p>&#169;Copyrights MS-hostel</p>
+        </div>
+
+
+    </body>
+</html>

@@ -1,0 +1,155 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url(bg3.img);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#top{
+    background: linear-gradient(to left, rgb(57, 118, 142),rgb(155, 155, 196));   
+    display: flex;
+    padding: 20px;
+
+
+}
+
+#top a{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+}
+#top a:hover{
+    background-color:white;
+}
+img{
+    max-width: 100%;
+    border-radius: 10%;
+}
+.heading{
+    text-align: center;
+    background-image: url(giphy\ \(1\).gif);
+    background-clip: text;
+    color: transparent;
+  }
+.left{
+    animation: wiggl 5s linear infinite;
+    box-shadow: -10px 10px 10px;
+}
+.right{
+    animation: wigglee 5s linear infinite;
+    box-shadow: 10px 10px 10px;
+}
+span{
+    font-weight: bold;
+    font-size: x-large;
+}
+.box{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-gap: 1em;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+.box1,.box2,.box3,.box4 {
+    background-image: linear-gradient(to right,#eee,#098);
+    border-radius: 5px;
+    border-end-end-radius: 50px;
+    margin: 2em;
+    
+}
+.box2,.box4{
+    grid-template-columns: 2fr 3fr;
+}
+@media(max-width:800px){
+    .box{
+        grid-template-columns: repeat(1,minmax(100px,auto));
+    }
+}
+button {
+    animation: wiggle 2s linear infinite;
+    border-radius: 50px;
+    background-image: url(giphy.gif);
+    font-weight: bolder;
+}
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotatez(0);
+    }
+    15% {
+      transform: rotatez(-15deg);
+    }
+    20% {
+      transform: rotatez(10deg);
+    }
+    25% {
+      transform: rotatez(-10deg);
+    }
+    30% {
+      transform: rotatez(6deg);
+    }
+    35% {
+      transform: rotatez(-4deg);
+    }
+    40%, 100% {
+      transform: rotatez(0);
+    }
+}
+@keyframes wiggl {
+    0%, 7% {
+      transform: rotatey(0);
+    }
+    15% {
+      transform: rotatey(-15deg);
+    }
+    20% {
+      transform: rotatey(-25deg);
+    }
+    25%,50% {
+      transform: rotatey(-30deg);
+    }
+    60% {
+      transform: rotatey(-25deg);
+    }
+    75% {
+      transform: rotatey(-15deg);
+    }
+    85%, 100% {
+      transform: rotatey(0);
+    }
+}
+@keyframes wigglee {
+    0%, 7% {
+      transform: rotatey(0);
+    }
+    15% {
+      transform: rotatey(15deg);
+    }
+    20% {
+      transform: rotatey(25deg);
+    }
+    25%,50% {
+      transform: rotatey(30deg);
+    }
+    60% {
+      transform: rotatey(25deg);
+    }
+    75% {
+      transform: rotatey(15deg);
+    }
+    85%, 100% {
+      transform: rotatey(0);
+    }
+}
+.final{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: white;
+}

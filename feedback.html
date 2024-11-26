@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HOSTEL_FEEDBACK
+        </title>
+        <link rel="stylesheet" href="feedback.css">
+
+    </head>
+    <body>
+        <div  id="top">
+            <div>
+                <nav><a href="page.html">&#8592;Back</a></nav>
+            </div>
+        </div><br><br>
+        <div class="container">
+            <div class="topcon">
+                <form>
+                    <input type="search" name="search" placeholder="Search...">
+                    <input type="submit" name="search" value="search">
+                </form>
+                <label>Sort by:
+                    <select class="option">
+                        <option>Newest</option>
+                        <option>Top review</option>
+                    </select>
+                </label>
+            </div><br><br>
+            <div id="feedback">
+                <div class="feed"><span>8/8/2020</span><br><br>
+                    &#34A positive social atmosphere where students can interact, make friends, and participate in activities is often highlighted in reviews. This can make the hostel feel like a second home&#34. -  George
+                    <br>
+                    <span>&#9733&#9733&#9733&#9733&#9734</span>
+                </div>
+                <div class="feed"><span>12/8/2021</span><br><br>
+                    &#34Security is a top priority for students. Hostels with secure entry systems, lockers, and a safe environment are often recommended&#34. - Mike
+                    <br><span>&#9733&#9733&#9733&#9734&#9734</span>
+                </div>
+                <div class="feed"><span>5/18/2022</span><br><br>
+                    &#34Hostels that offer good facilities such as Wi-Fi, study areas, common rooms, and kitchen facilities are highly rated. These amenities contribute to a comfortable and productive stay&#34.
+                    -   Prabha
+                    <br><span>&#9733&#9733&#9733&#9733&#9734</span>
+                </div>
+                <div class="feed"><span>11/15/2022</span><br><br>
+                    &#34Hostels located near universities, public transport, and essential amenities receive favorable reviews. Proximity to these conveniences makes daily life easier for students&#34. - Kyarl
+                    <br><span>&#9733&#9733&#9733&#9733&#9734</span>
+                </div>
+                <div class="feed"><span>7/25/2023</span><br><br>
+                    &#34Positive interactions with hostel staff can significantly enhance the experience. Reviews often mention staff who are helpful, approachable, and willing to assist with any issues&#34. - Lara 
+                    <br><span>&#9733&#9733&#9733&#9733&#9734</span>
+                </div>
+
+
+            </div><br><br>
+            <div><br>
+                <p style="text-align: center;">LEAVE A FEEDBACK:</p>
+            <br><fieldset class="form"><br>
+                <label for="feedback"> Name: <input type="name" id="username" name="feedback"></label>
+                <br>Feedback:
+                <textarea name="feedback" id="feedbackarea"></textarea><br>
+                <div class="flex">
+                    <span onclick="gfg(1)" class="star">★</span>
+                    <span onclick="gfg(2)"class="star">★</span>
+                    <span onclick="gfg(3)"class="star">★ </span>
+                    <span onclick="gfg(4)"class="star">★</span>
+                    <span onclick="gfg(5)"class="star">★</span>
+                    <h3 id="output">Rating is: 0/5</h3>
+                </div>
+                
+                <button type="submit" class="finalsub" name="feedback" onclick="addfeedback()">SUBMIT</button>
+            </fieldset>
+            <div class="popup" id="popup" class="flex_center">
+                <img src="checkmark--outline.svg"/>
+                <h3>Thanks for your feedback!</h3>
+                <button onclick="showPopup(false)">Ok</button>
+              </div>
+                <br>   
+            </div>
+
+        </div>
+        <legend id="legend"></legend>
+        <script src="feedback.js"></script>
+    </body>
+</html>

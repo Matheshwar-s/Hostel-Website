@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MS-Hostel</title>
+        <link rel="stylesheet" href="page.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    </head>
+    <body>
+            <nav>
+                <h1 class="text">HOSTEL MS</h1>
+                <a href="rooms.html" class="hideonmobile">HOSTEL</a>
+                <a href="about.html" class="hideonmobile">ABOUT</a>
+                <a href="feedback.html" class="hideonmobile">FEEDBACK</a>
+                <a href="login.html" class="hideonmobile">LOGIN</a>
+                <ul class="hideonmobilei">
+                    <li onclick=showHide()><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+                </ul>
+            </nav>
+            <nav class="hide">
+                <ul>
+                    <li onclick=hidehide()><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+                </ul>
+                <a href="rooms.html">HOSTEL</a>
+                <a href="about.html">ABOUT</a>
+                <a href="feedback.html">FEEDBACK</a>
+                <a href="login.html">LOGIN</a>
+            </nav>
+            <div class="container">
+                <div class="container1">
+                    <p>&#34A hostel is a place where students of a school or college can experience economic, healthy, and safe accommodation. Many students around the world live in hostels. Generally, hostels are meant for students who migrate from a long distance for their education&#34.</p>
+                    follow us on:
+                    <br><br><br>
+                    <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                    <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+                    <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                </div>
+                <div class="container2"><img src="index.jpeg" class="img"/></div>
+                <div class="footer">
+                    <p>&#169;Copyrights MS-hostel</p>
+                </div>
+            </div>
+        <script>
+            function showHide(){
+                const hide= document.querySelector('.hide')
+                hide.style.display='flex'
+                hide.style.transition='50s ease-in-out'
+         }
+            function hidehide(){
+                const hide=document.querySelector('.hide')
+                hide.style.display='none'
+            }
+        </script>
+    </body>
+</html>

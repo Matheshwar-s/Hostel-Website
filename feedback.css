@@ -1,0 +1,172 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url(bg3.img);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#top{
+    background: linear-gradient(to left, rgb(57, 118, 142),rgb(155, 155, 196));   
+    display: flex;
+    padding: 20px;
+
+}
+#top a{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+}
+#top a:hover{
+    background-color:white;
+}
+.topcon{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+input[type=submit]{
+    text-indent: -999px;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E");
+    width: 20px;
+    cursor: pointer;
+    background-color: aliceblue;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 0;
+    margin-left: -25px;
+    padding: 2px;
+}
+input[type=search]{
+    background-color: aliceblue;
+    padding: 2px;
+    height: 30px;
+}
+.option{
+    height: 30px;
+}
+.container{
+    background-color: lightblue;
+    padding: 2em;
+    margin: 2em;
+
+}
+#feedback{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+#feedback div{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1em;
+}
+input[type=button]{
+    background-color: transparent;
+    text-indent: -999px;
+    background-image: url(like.png);
+    background-size: cover;
+    border: 1px;
+    border-radius: 50%;
+    width: 20px;
+    
+
+}
+.form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border: 1px solid black;
+    padding: 1em;
+    margin: 1em;
+    background-image: url(giphy.gif);
+    background-size: cover;
+    color: blanchedalmond;
+    font-weight: bolder;
+}
+.finalsub{
+    width: fit-content;
+    align-self: center;
+    background-image: url(giphy\ \(1\).gif);
+    border: 1px;
+    border-radius: 50px;
+    padding: 5px;
+}
+.star{
+    background-color: unset;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+
+}
+.flex input{
+    display: none;
+    cursor: pointer;
+}
+.one {
+    color: rgb(255, 0, 0);
+}
+   
+.two {
+    color: rgb(255, 106, 0);
+}
+   
+.three {
+    color: rgb(251, 255, 120);
+}
+   
+.four {
+    color: rgb(255, 255, 0);
+}
+   
+.five {
+    color: rgb(24, 159, 14);
+}
+.popup {
+    width:400px;
+    background-color: #e8bcf0;
+    border-radius: 3mm;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    position: fixed;
+    padding: 30px;
+    visibility: hidden;
+}
+  
+.popup img {
+    padding-top: 20px;
+}
+  
+.popup button {
+    background-color: #fff;
+    border: 1px solid #7600bc;
+    color: #7600bc;
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    width: 2in;
+    font-size: 20px;
+    margin-left: 25%;
+}
+  
+.popup button:hover {
+    background-color: #fff;
+    border: 2px solid #7600bc;
+    color: #7600bc;
+    display: block;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 25%;
+}
+#legend{
+  visibility: hidden;
+}
+

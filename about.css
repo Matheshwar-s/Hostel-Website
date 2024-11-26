@@ -1,0 +1,94 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url(bg3.img);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#top{
+    background: linear-gradient(to left, rgb(57, 118, 142),rgb(155, 155, 196));   
+    display: flex;
+    padding: 20px;
+
+}
+#top a{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+}
+#top a:hover{
+    background-color:white;
+}
+.container , .container2{
+    display: flex;
+    gap:5em;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+img{
+    width: 235px;
+    height: 250px;
+    border-radius: 50%;
+}
+.card1, .card2, .card3, .card4, .card5{
+    background-color: rgb(87, 190, 224); ;
+    width: 250px;
+    margin: 7px;
+    border-right: 0;
+}
+.light{
+    width: 265px;
+    background-image: linear-gradient(red,blue);
+    animation: light 5s;
+    animation-iteration-count: infinite;
+}
+button{
+    background-color: rgb(87, 190, 224);
+}
+@keyframes light {
+    0%{
+        background-image: linear-gradient(right, red,blue);
+    }
+    25%{
+        background-image: linear-gradient( red, blue);
+    }
+    50%{
+        background-image: linear-gradient(blue,red);
+    }
+    75%{
+        background-image: linear-gradient();
+    }
+    
+}
+.final{
+    text-align: center;
+    background: linear-gradient(to left, rgb(57, 118, 142),rgb(155, 155, 196)); 
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+button:hover{
+    background-image: url(giphy\ \(1\).gif);
+    cursor: pointer;
+}
+.hide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    color: chartreuse;
+    background-image: url(giphy.gif);
+    background-size: cover;
+    height: 200px;
+}
+.seemore{
+    border-radius: 20px;
+}
+h1{
+    text-align: center;
+}

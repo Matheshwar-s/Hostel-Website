@@ -1,0 +1,105 @@
+@keyframes login{
+    from{background-image: linear-gradient(skyblue,blue);}
+    to{background-image: linear-gradient(blue,skyblue);}
+}
+body{
+    background-image: url(bg3.img);
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+
+}
+#top{
+    background: linear-gradient(to left, rgb(57, 118, 142),rgb(155, 155, 196));   
+    display: flex;
+    padding: 20px;
+
+}
+
+#top a{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+}
+#top a:hover{
+    background-color:white;
+}
+/* form*/
+
+
+#form{
+        margin:2em;
+        padding-bottom: 18px;
+        animation-name: login;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+
+    
+}
+
+label{
+    color: blanchedalmond;
+}
+
+
+
+.signup{
+    border: 1px solid black;
+    background-image: url(bg4.img);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.formimg{
+    width: 250px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 1px solid;
+    border-radius: 500%;
+    max-height: 100%;
+}
+.button{
+    width: 150px;
+    background-image: linear-gradient(to right,#f10de9,#2f05ea);
+    border-width:0px;
+    border-radius:10px;
+    color:white;
+}
+.slider{
+    appearance: none;
+    width: 100px;
+    height: 10px;
+    border-radius: 5px;
+    background: #d3d3d3;
+
+}
+.slider::-webkit-slider-thumb{
+    
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background:rgb(155, 155, 196);
+    cursor: grab;
+
+
+}
+select{
+    background-color: #d3d3d3;
+    padding: 5px 5px;
+    border-radius: 4px;
+}
+.footer{
+    background: linear-gradient(to left, rgb(57, 118, 142),rgb(155, 155, 196)); 
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
